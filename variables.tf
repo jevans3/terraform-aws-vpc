@@ -37,7 +37,7 @@ variable "tags" {
 variable "cidr_block" {
   type        = string
   description = "CIDR for the VPC"
-  default     = "10.50.50.0/24
+  default     = "10.50.50.0/24"
 }
 
 variable "instance_tenancy" {
