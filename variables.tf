@@ -1,18 +1,19 @@
 variable "namespace" {
   description = "Namespace (e.g. `cp` or `cloudposse`)"
   type        = string
-  default     = ""
+  default     = "hcat"
 }
 
 variable "stage" {
   description = "Stage (e.g. `prod`, `dev`, `staging`)"
   type        = string
-  default     = ""
+  default     = "dev"
 }
 
 variable "name" {
   description = "Name  (e.g. `app` or `cluster`)"
   type        = string
+  default     = "hcatterravpc" 
 }
 
 variable "delimiter" {
@@ -36,6 +37,7 @@ variable "tags" {
 variable "cidr_block" {
   type        = string
   description = "CIDR for the VPC"
+  default     = "10.50.50.0/24
 }
 
 variable "instance_tenancy" {
