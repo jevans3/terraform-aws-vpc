@@ -22,6 +22,12 @@ variable "delimiter" {
   description = "Delimiter to be used between `namespace`, `stage`, `name` and `attributes`"
 }
 
+variable "region" {
+  type        = string
+  default     = "us-east-1"
+  description = "jevans added 10 12 19 to debug Terra deployment"
+}
+
 variable "attributes" {
   type        = list(string)
   default     = []
